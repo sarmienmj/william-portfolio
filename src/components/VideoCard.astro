@@ -1,0 +1,7 @@
+---
+const { src } = Astro.props;
+---
+
+<div class="video-card border-2 border-white hover:scale-150 duration-150 hover:z-10">
+  <video src={src} class="h-60" autoplay loop muted ></video>
+</div>

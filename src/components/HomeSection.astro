@@ -1,0 +1,32 @@
+---
+import Navbar from "../components/Navbar.astro";
+---
+
+<section id="home" class="w-full h-screen">
+    <video
+      class="brightness-50 background-home"
+      src="https://files.cargocollective.com/c669863/WALLPAPER_BANDE-DEMO_2020.mp4"
+      autoplay
+      loop
+      muted></video>
+    <Navbar />
+    <div class="w-full flex flex-col place-items-center">
+      <img class="w-1/4" src="/logo.png" />
+      <h1 class="text-3xl sm:text-9xl text-white">WILLIAM ALFARO.</h1>
+      <h2 class="text-xl text-white">
+        Volibear, Videografo, Gragas & Video Editor
+      </h2>
+    </div>
+  </section>
+
+  <style>
+    .background-home {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      z-index: -1;
+    }
+    </style>

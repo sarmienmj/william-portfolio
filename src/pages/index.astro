@@ -1,0 +1,30 @@
+---
+import AboutSection from "../components/AboutSection.astro";
+import GallerySection from "../components/GallerySection.astro";
+import HomeSection from "../components/HomeSection.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Walfaro.">
+  <HomeSection />
+  <AboutSection />
+  <GallerySection />
+  <section class="w-full h-screen bg-black"></section>
+</Layout>
+
+<style is:global>
+  @font-face {
+    font-family: "TopShop";
+    src: url("/fonts/fuentepersonalizada.otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  h1 {
+    font-family: "TopShop";
+  }
+  h2 {
+    font-family: "TopShop";
+  }
+</style>

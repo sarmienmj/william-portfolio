@@ -1,0 +1,30 @@
+---
+import VideoCard from "./VideoCard.astro";
+
+const videoVertical =
+  "https://assets.mixkit.co/videos/preview/mixkit-portrait-of-a-fashion-woman-with-silver-makeup-39875-large.mp4";
+
+const videoHorizontal =
+  "https://assets.mixkit.co/videos/preview/mixkit-a-young-woman-with-kitty-headphones-enjoys-a-gaming-session-51623-large.mp4";
+---
+
+<section id="work" class="w-full text-white bg-gray border border-white ">
+  <div class="w-full flex flex-col place-items-center border border-white">
+    <h1 class="text-7xl p-10">Gallery</h1>
+  </div>
+  <div class="bg-gradient-to-r from-violet-400 via-purple-500 to-black">
+    <div class="w-full flex justify-between items-center flex-wrap content-start gap-1 max-w-5xl mx-auto  p-1">
+      <VideoCard  src={videoVertical} />
+      <VideoCard  src={videoHorizontal} />
+      <VideoCard  src={videoVertical} />
+      <VideoCard  src={videoVertical} />
+      <VideoCard  src={videoHorizontal} />
+      <VideoCard  src={videoVertical} />
+      <VideoCard  src={videoVertical} />
+      <VideoCard  src={videoVertical} />
+      <VideoCard  src={videoHorizontal} />
+      <VideoCard  src={videoVertical} />
+      <VideoCard  src={videoHorizontal} />
+    </div>
+  </div>
+</section>
